@@ -54,7 +54,7 @@
 	}
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 400px) {
     .tab {
         display: flow-root;
         flex-wrap: wrap;
