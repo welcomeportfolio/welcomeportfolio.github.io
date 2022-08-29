@@ -1,0 +1,64 @@
+html,body{
+	height: 100%;/*高さを100%にして描画エリアをとる*/
+}
+
+body {
+	background-color: white;
+}
+
+head {
+	text-decoration: none;
+}
+
+ul {
+	text-align: center;
+}
+
+/*白背景とピンク泡の横並び指定*/
+.wapper{
+	display: flex;
+	height: 100%;
+}
+
+ /*白背景*/
+.white-back-text{
+	position: relative;
+	z-index: 0; /*#particles-jsの半分を白背景で設定*/
+	width: 50%;
+	height: 100%;
+	background: white;
+	text-align: center; /*文字を中央揃え*/
+}
+
+/*ピンクの泡*/
+#particles-js{ 
+	position:fixed;/*描画固定*/
+	z-index: -1;/*描画を一番下に*/
+	width: 100%;
+	height: 100%;
+	background-color:rgb(219, 93, 152);/*背景色*/
+}
+
+/*白背景内の文字*/
+.text-title{
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 28%;/*textを中央へ。※文字数により%を変更する*/
+}
+
+h1 {
+	font-size: 40px;
+	font-family: 'Cormorant', serif;
+}
+
+h2 {
+	font-size: 40px;
+	font-family: 'Cormorant', serif;
+}
+
+h3 {
+	font-size: 40px;
+	font-family: 'Cormorant', serif;
+}
+
+
