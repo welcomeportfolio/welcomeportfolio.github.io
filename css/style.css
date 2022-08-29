@@ -82,10 +82,4 @@ body {
         font-size: 25px;
         font-family: "Sawarabi Mincho";
     }
-    body {
-        background-image: url(image/background.jpg);
-        background-position: right 58% bottom -29%;
-        background-repeat: no-repeat;
-        background-size: 50% auto;
-    }
 }
