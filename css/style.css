@@ -60,3 +60,11 @@
         font-family: "Sawarabi Mincho";
     }
 }
+
+
+@media screen and (max-width: 400px) {
+	.title h3 {
+    font-size: 35px;
+    font-family: "Sawarabi Mincho";
+}
+}
