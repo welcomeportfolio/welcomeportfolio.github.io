@@ -61,4 +61,10 @@ h3 {
 	font-family: 'Cormorant', serif;
 }
 
-
+@media screen and (max-width: 425px) {
+.text-title {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 57%;
+}
+}
