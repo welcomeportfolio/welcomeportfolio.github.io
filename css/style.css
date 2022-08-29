@@ -53,3 +53,32 @@
 		opacity: 1;
 	}
 }
+
+@media screen and (min-width: 425px) {
+    .tab {
+        display: flow-root;
+        flex-wrap: wrap;
+        font-size: 1px;
+        font-family: 'Poiret One', cursive;
+    }
+    .title h1 {
+        margin-top: 6%;
+        padding-top: 6%;
+        font-size: 25px;
+        font-family: 'Rajdhani', sans-serif;
+    }
+    .title h2 {
+        font-size: 25px;
+        font-family: "Hannari";
+    }
+    .title h3 {
+        font-size: 25px;
+        font-family: "Sawarabi Mincho";
+    }
+    body {
+        background-image: url(image/background.jpg);
+        background-position: right 58% bottom -29%;
+        background-repeat: no-repeat;
+        background-size: 50% auto;
+    }
+}
