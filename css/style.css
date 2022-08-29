@@ -54,30 +54,7 @@
 	}
 }
 
-@media screen and (max-width: 400px) {
-    @media screen and (max-width: 425px) {
-.tab {
-    display: -webkit-inline-box;
-    flex-wrap: wrap;
-    font-size: 30px;
-    font-family: 'Poiret One', cursive;
-}
-body {
-    background-image: url(image/background.jpg);
-    background-position: right 59% bottom -13%;
-    background-repeat: no-repeat;
-    background-size: 53% auto;
-}
-    .title h1 {
-        margin-top: 6%;
-        padding-top: 6%;
-        font-size: 25px;
-        font-family: 'Rajdhani', sans-serif;
-    }
-    .title h2 {
-        font-size: 25px;
-        font-family: "Hannari";
-    }
+
     .title h3 {
         font-size: 25px;
         font-family: "Sawarabi Mincho";
