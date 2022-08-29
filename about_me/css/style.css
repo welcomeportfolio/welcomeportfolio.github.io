@@ -65,4 +65,11 @@ html,body {
     font-size: 2em;
   }
 
- 
+ @media screen and (max-width: 425px) {
+     body {
+    font-family: 'Raleway', sans-serif;
+    padding: 1em 2em;
+    font-size: 11px;
+    color: #aaa;
+    }
+}
