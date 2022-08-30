@@ -4,86 +4,80 @@ h1{
     color:#121212;
 }
 .heading {
-    margin: 0;
+    margin: 50px auto;
     padding: 0;
     font-size: 50px;
     line-height: 1.6;
     font-family: 'Poiret One', cursive;
 }
 
-.area {
-    font-size: 20px;
+.title {
+	margin: 20px auto;
+    color: #121212;
     font-family: 'Poiret One', cursive;
+    font-size: 28px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 8px 0px;
+    max-width: 500px;
 }
-
-.fadeUpTrigger{
-	opacity: 0;
-	}
-	.fadeUp {
-		animation-name: fadeUpAnime;
-		animation-duration:2s;
-		animation-fill-mode:forwards;
-		opacity: 0;
-	}
-	@keyframes fadeUpAnime{
-	from {
-		opacity: 0;
-		transform: translateY(100px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-	}
 
 body {
     margin: 0;
     background: rgb(236, 233, 233)
 }
 
-html {
-	font-size: 15px;
+
+
+
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {
+    position:relative;
+	z-index: 1;
+	/*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
+	height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+}
+
+.slider-top,
+.slider-bottom {
+    height: 50vh;/*スライダー上下の縦幅を画面の高さの半分（50vh）にする*/
+}
+
+/*　背景画像設定　*/
+
+.slider-item01 {
+    background:url(../image/09.jpg)	;
+}
+
+.slider-item02 {
+    background:url(../image/12.jpg);
+}
+
+.slider-item03 {
+    background:url(../image/14.jpg);
+}
+
+.slider-item04 {
+    background:url(../image/10.jpg);
+}
+
+.slider-item05 {
+    background:url(../image/11.jpg);
+}
+
+.slider-item06 {
+    background:url(../image/13.jpg);
+}
+
+.slider-item {
+    width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+    height:50vh;/*各スライダーの縦幅を画面の高さの半分（50vh）にする*/
+    background-repeat: no-repeat;/*背景画像をリピートしない*/
+    background-position: center;/*背景画像の位置を中央に*/
+    background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
 }
 
 
-/*tabの形状*/
-.tab{
-	display: flex;
-	flex-wrap: wrap;
-}
-.tab li a{
-	display: block;
-	background:#ddd;
-	margin:0 2px;
-	padding:10px 20px;
-}
-/*liにactiveクラスがついた時の形状*/
-.tab li.active a{
-	background:#fff;
-}
-
-
-/*エリアの表示非表示と形状*/
-.area {
-	display: none;/*はじめは非表示*/
-	opacity: 0;/*透過0*/
-	background: #fff;
-	padding:50px 20px;
-}
-
-/*areaにis-activeというクラスがついた時の形状*/
-.area.is-active {
-    display: block;/*表示*/
-    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes displayAnime{
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
